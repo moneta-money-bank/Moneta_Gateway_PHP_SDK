@@ -1,5 +1,5 @@
-# Turnkey-PHP-SDK
-This  library provides integration access to the Turnkey Global Api.
+# Moneta-Gateway-PHP-SDK
+This  library provides integration access to the Moneta-Gateway Global Api.
 
 ## Quick Start
 
