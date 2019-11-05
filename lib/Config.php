@@ -9,16 +9,16 @@ class Config {
     static $BaseUrl;
     static $JavaScriptUrl;
     static $TestUrls = array(
-        "SessionTokenRequestUrl" => "https://apiuat.test.monetaplatebnisluzby.cz/token",
-        "PaymentOperationActionUrl" => "https://apiuat.test.monetaplatebnisluzby.cz/payments",
-        "JavaScriptUrl" => "https://cashierui-apiuat.test.monetaplatebnisluzby.cz/js/api.js",
-        "BaseUrl" => "https://cashierui-apiuat.test.monetaplatebnisluzby.cz/",
+        "SessionTokenRequestUrl" => "https://apiuat.test.boipapaymentgateway.com/token",
+        "PaymentOperationActionUrl" => "https://apiuat.test.boipapaymentgateway.com/payments",
+        "JavaScriptUrl" => "https://cashierui-apiuat.test.boipapaymentgateway.com/js/api.js",
+        "BaseUrl" => "https://cashierui-apiuat.test.boipapaymentgateway.com/ui/cashier",
     );
     static $ProductionUrls = array(
-        "SessionTokenRequestUrl" => "https://api.monetaplatebnisluzby.cz/",
-        "PaymentOperationActionUrl" => "https://api.monetaplatebnisluzby.cz/payments",
-        "JavaScriptUrl" => "https://cashier-api.monetaplatebnisluzby.czjs/api.js",
-        "BaseUrl" => "https://cashier-api.monetaplatebnisluzby.cz",
+        "SessionTokenRequestUrl" => "https://api.boipapaymentgateway.com/token",
+        "PaymentOperationActionUrl" => "https://api.boipapaymentgateway.com/payments",
+        "JavaScriptUrl" => "https://cashierui-api.boipapaymentgateway.com/js/api.js",
+        "BaseUrl" => "https://cashierui-api.boipapaymentgateway.com/ui/cashier",
     );
     static $Protocol = "https";
     static $Method = "POST";

@@ -1,23 +1,33 @@
 <pre>
     <?php
     include '../../payments.php';
-
+	include '../example_data.php';
+	
     use Payments\Payments;
 
 try {
+		$currentFile = basename(__FILE__, '.php').".php";
+		$tmp = getSiteDomain(). $_SERVER['REQUEST_URI'];
+		$landingUrl = str_replace($currentFile,"result.php",$tmp ) . "?merchantTxId=".$merchantTxId; 
+		//print_r($landingUrl);
+		
+		
         $payments = (new Payments())->testEnvironment(array(
-            "merchantId" => "5000",
-            "password" => "5678",
+            "merchantId" => $merchantId,
+            "password" => $password,
         ));
         $purchase = $payments->purchase();
-        $purchase->allowOriginUrl("http://google.com/")->
+        $purchase->allowOriginUrl(getSiteDomain())->
                 merchantNotificationUrl("http://google.com/")->
+				merchantLandingPageUrl($landingUrl) ->
+				merchantTxId($merchantTxId) ->
                 channel(Payments::CHANNEL_ECOM)->
                 userDevice(Payments::USER_DEVICE_DESKTOP)->
-                amount("20.00")->
-                country("GB")->
-                currency("EUR")->
-                paymentSolutionId("500");
+                amount($amount)->
+                country($country)->
+                currency($currency)->
+				customerId($customer_it_token)->
+                paymentSolutionId($paymentSolutionId);
         $token = $purchase->token();
         ?>
     </pre>
