@@ -1,5 +1,5 @@
 # Moneta-Gateway-PHP-SDK
-This  library provides integration access to the BOIPA Gateway.
+This  library provides integration access to the Moneta Gateway.
 
 ## Quick Start
 
