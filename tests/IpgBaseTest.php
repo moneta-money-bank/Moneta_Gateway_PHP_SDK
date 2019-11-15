@@ -9,12 +9,12 @@ class IpgBaseTest extends TestCase
 
     protected $payments = null;
     
-    protected static $MERCHANT_ID = "168678";
-    protected static $PASSWORD = "12345";
-    protected static $BRAND_ID = "1686780000";
+    protected static $MERCHANT_ID = "";
+    protected static $PASSWORD = "";
+    protected static $BRAND_ID = "";
 	protected static $AMOUNT = "12.00";
-	protected static $COUNTRY = "IE";
-	protected static $CURRENCY = "GBP";
+	protected static $COUNTRY = "";
+	protected static $CURRENCY = "";
 	protected static $CVV = "888";
 	protected static $PAYMENT_SOLUTION_ID = "500";
 	protected static $FAKE_HOST = "http://www.fake.com";
@@ -22,8 +22,8 @@ class IpgBaseTest extends TestCase
 	
 	protected static $CARD_NUMBER="5413330300002004";
 
-//     protected const MERCHANT_ID = "5000";
-//     protected const PASSWORD = "5678";
+//     protected const MERCHANT_ID = "";
+//     protected const PASSWORD = "";
 //     protected const BRAND_ID = "";
 
     public function setUp(){

@@ -217,7 +217,7 @@ There are 7 Request Object classes in total:
 * __Payments/Auth__ requests authorisation for a payment.
 * __Payments/Capture__ performs a capture operation on an authorized payment.
 * __Payments/Void__ cancels a previously authenticated payment.
-* __Payments/Purchase__ does an authorize and capture operations at once (and cannot be voided).
+* __Payments/Purchase__ does an authorize and capture operations at once (and cannot be voided).  It also supports Recurring Payments(COF) - set cardOnFileType to 'First' for initial transaction, set cardOnFileType to 'Repeat' and cardOnFileInitiator to 'Merchant' for subsequent transactions.
 * __Payments/Refund__ refunds a previous capture operation, partially or in full.
 * __Payments/StatusCheck__ returns the status of an already issued payment transaction, as such it doesn’t actually generate a new transaction.
 
