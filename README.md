@@ -19,7 +19,7 @@ Once done - all its code will be available to you under the Payments PHP namespa
 
 > Composer is a popular dependency management tool and you can find more information about it at https://getcomposer.org/
 
-##Choose an Operation Mode
+## Choose an Operation Mode
 
 Moneta Gateway SDK lets you choose between two ways of using it:
 
